@@ -1,5 +1,6 @@
-import { ArrowRight, ChevronRight, Link } from "lucide-react"
+import { ArrowRight, ChevronRight } from "lucide-react"
 import Image from "next/image"
+import Link from "next/link"
 import { Fragment } from "react"
 
 import Container from "@/components/globals/container"
@@ -45,6 +46,7 @@ const Hero = () => {
               <div className="relative mt-8 hidden w-full items-center justify-center md:mt-12 md:flex">
                 <Link
                   href="/"
+                  prefetch={false}
                   className="border-foreground/30 shadow-foreground/40 flex w-max cursor-pointer select-none items-center justify-center rounded-full border-t bg-white/30 px-2 py-1 shadow-2xl backdrop-blur-lg md:gap-8 md:py-2"
                 >
                   <p className="text-foreground pl-4 pr-4 text-center text-sm font-medium md:text-base lg:marker:pr-0">
