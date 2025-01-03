@@ -3,9 +3,11 @@ import { Fragment } from "react"
 
 import Icons from "@/components/globals/icons"
 import { buttonVariants } from "@/components/ui/button"
+import { UserButton } from "@clerk/nextjs"
+import { currentUser } from "@clerk/nextjs/server"
 
-const Navbar = () => {
-  const user = false
+const Navbar = async () => {
+  const user = await currentUser()
 
   return (
     <header className="bg-background/40 border-border sticky inset-x-0 top-0 z-50 h-14 w-full border-b px-4 backdrop-blur-lg">
@@ -36,7 +38,7 @@ const Navbar = () => {
 
         <div className="flex items-center gap-4">
           {user ? (
-            "user button"
+            <UserButton />
           ) : (
             <Fragment>
               <Link
