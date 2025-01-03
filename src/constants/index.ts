@@ -1,6 +1,6 @@
 import Icons from "@/components/globals/icons"
 
-export const perks = [
+const PERKS = [
   {
     icon: Icons.auth,
     title: "Sign Up",
@@ -18,7 +18,7 @@ export const perks = [
   },
 ]
 
-export const features = [
+const FEATURES = [
   {
     icon: Icons.bolt,
     title: "Fast Setup",
@@ -51,7 +51,7 @@ export const features = [
   },
 ]
 
-export const pricingCards = [
+const PRICING_CARDS = [
   {
     title: "Starter",
     description: "Perfect for trying out plura",
@@ -63,7 +63,7 @@ export const pricingCards = [
     priceId: "",
   },
   {
-    title: "Unlimited Saas",
+    title: "Unlimited SaaS",
     description: "The ultimate agency kit",
     price: "$199",
     duration: "month",
@@ -94,7 +94,7 @@ export const pricingCards = [
   },
 ]
 
-export const bentoCards = [
+const BENTO_CARDS = [
   {
     title: "Start with Inspiration",
     info: "Browse our vast library of pre-designed templates or upload your own images.",
@@ -121,7 +121,7 @@ export const bentoCards = [
   },
 ]
 
-export const reviews = [
+const REVIEWS = [
   {
     name: "Jack",
     username: "@jack",
@@ -153,3 +153,5 @@ export const reviews = [
     body: "I'm at a loss for words. This is amazing. I love it.",
   },
 ]
+
+export { BENTO_CARDS, FEATURES, PERKS, PRICING_CARDS, REVIEWS }

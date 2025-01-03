@@ -12,18 +12,18 @@ interface ContainerProps extends PropsWithChildren {
 }
 
 const Container = ({
-  reverse,
   children,
   className,
   delay = 0.2,
+  reverse,
 }: ContainerProps) => {
   return (
     <motion.div
-      initial={{ opacity: 0, y: reverse ? -20 : 30 }}
+      className={cn("h-full w-full", className)}
+      initial={{ opacity: 0, y: reverse ? -20 : 20 }}
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: false }}
-      transition={{ duration: 0.4, delay, ease: "easeInOut" }}
-      className={cn("h-full w-full", className)}
+      transition={{ delay: delay, duration: 0.4, ease: "easeInOut" }}
     >
       {children}
     </motion.div>
