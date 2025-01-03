@@ -154,4 +154,20 @@ const REVIEWS = [
   },
 ]
 
-export { BENTO_CARDS, FEATURES, PERKS, PRICING_CARDS, REVIEWS }
+const FOOTER_LINKS = [
+  {
+    title: "Product",
+    items: ["Features", "Pricing", "Testimonials", "Integration"],
+  },
+  {
+    title: "Integrations",
+    items: ["Facebook", "Instagram", "Twitter", "LinkedIn"],
+  },
+  { title: "Resources", items: ["Blog", "Case Studies", "Support"] },
+  {
+    title: "Company",
+    items: ["About Us", "Privacy Policy", "Terms & Conditions"],
+  },
+]
+
+export { BENTO_CARDS, FEATURES, FOOTER_LINKS, PERKS, PRICING_CARDS, REVIEWS }

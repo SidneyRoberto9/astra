@@ -1,5 +1,6 @@
 import { PropsWithChildren } from "react"
 
+import Footer from "@/components/globals/footer"
 import Navbar from "@/components/globals/navbar"
 
 const MarketingLayout = ({ children }: PropsWithChildren) => {
@@ -7,6 +8,7 @@ const MarketingLayout = ({ children }: PropsWithChildren) => {
     <div className="flex w-full flex-col items-center">
       <Navbar />
       {children}
+      <Footer />
     </div>
   )
 }
