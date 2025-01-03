@@ -1,6 +1,6 @@
 import { PropsWithChildren } from "react"
 
-import Navbar from "@/components/navbar"
+import Navbar from "@/components/globals/navbar"
 
 const MarketingLayout = ({ children }: PropsWithChildren) => {
   return (
